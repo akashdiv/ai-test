@@ -1,0 +1,39 @@
+<div class="inner-dasboard">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <app-sidebar>
+                <div class="dashboard-navbar">
+                    <ul>
+                        <li routerLinkActive="active">
+                            <a routerLink="/train_bot">
+                                <h6>Train your bot</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a routerLink="/intents">
+                                <h6>Intents</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a routerLink="/catch_all">
+                                <h6>Catch All</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a routerLink="/analytics">
+                                <h6>Analytics</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </app-sidebar>
+            <div class="inner-dasnboard-box">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

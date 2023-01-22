@@ -1,0 +1,34 @@
+<div class="container-fluid extra-h">
+    <div class="row h-100">
+        <app-sidebar>
+            <div class="main-navbar">
+                <div class="dashboard-sublink">
+                    <div class="dashboard">
+                        <a routerLink="/"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+                    </div>
+                    <ul>
+                        <li><a routerLink="/chat"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/user"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/chat"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/user"><i class="fa fa-life-ring" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/chat"><i class="fa fa-bullhorn" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/user"><i class="fa fa-line-chart" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/chat"><i class="fa fa-qrcode" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/user"><i class="fa fa-tasks" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/chat"><i class="fa fa-tasks" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="dashboard-setting">
+                    <ul>
+                        <li><a routerLink="/chat"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                        <li><a routerLink="/user"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </app-sidebar>
+        <div class="main-dashboard-box">
+            <app-header></app-header>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

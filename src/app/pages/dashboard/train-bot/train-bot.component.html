@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="intents_head">
+                <h2>Add a new utterance</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button>+ Add intent</button>
+            </div>
+            <div class="intents_sort_clear">
+                <div class="intent_clear">
+                    <p>Insights</p>
+                    <button>Clear all</button>
+                </div>
+                <div class="intent_sort">
+                    <label>Sort by</label>
+                    <select>
+                        <option>Priority</option>
+                        <option>Unanswered</option>
+                        <option>Imrpove coverage</option>
+                        <option>Underperforming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="intents_main_box">
+                <div class="intents_box" *ngFor = "let intents of fetchData">
+                    <div class="intent_all_property">
+                        <span class="badge badge-{{ intents.title_class }}">{{ intents.tagline }}</span>
+                        <button class="btn_hover">Map to existing reply</button>
+                    </div>
+                    <div class="intent_all_property">
+                        <h3>{{ intents.title }}</h3>
+                        <button class="btn_hover">Add reply</button>
+                    </div>
+                    <div class="intent_all_property">
+                        <p class="">{{ intents.description }}</p>
+                        <button><i class="fa fa-clone" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
